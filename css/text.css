@@ -63,9 +63,14 @@ h1 {
     color: #000;
 }
 h2 {
-  margin-left: 3em;
+  color: #D35400;
+  font-size: 32px;
   padding-bottom: 12px;
   padding-top: 2em;
+}
+h3  {
+    color: #000;
+    padding-top: 3em;
 }
 h4 {
   margin-left: 4em;
@@ -95,6 +100,10 @@ h6 {
     border: 1px transparent solid;
     border-radius: 8px;
     box-shadow: 0px 4px 5px rgba(156, 156, 156, 0.25);
+}
+.buttons a:hover {
+    background: #D35400;
+    color: #fff;
 }
 
 /* Style the list */

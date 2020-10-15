@@ -65,6 +65,10 @@ h2 {
   position: absolute;
 }
 
+.home-image-2 {
+  display: none;
+}
+
   @media screen and (max-width: 1000px) {
     .header-right a {
       padding: 6px 12px;
@@ -85,8 +89,11 @@ h2 {
       font-weight: 500;
   }
     .home-image-1 {
-      top: 40%;
-      position: absolute;
-      max-width: 90%;
+      display: none;
+    }
+    .home-image-2 {
+      max-width: 72%;
+      padding: 4em;
+      display: inline-block;
     }
   }

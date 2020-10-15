@@ -22,6 +22,7 @@ article p {
   max-width: 60%;
   min-width: 35em;
 }
+
 span.sidenote__content {
   position: absolute;
   display: block;
@@ -162,6 +163,10 @@ ul.breadcrumb {
 .checkbox {
     display: none;
 }
+.checkbox:checked ~ .indice {
+  display: none;
+  z-index: 9999;
+}
 .checkbox:checked ~ .left-panel {
     right: 0;
 }
@@ -195,6 +200,7 @@ p.indice {
     font-family: 'Lora';
     margin-left: -4em;
     margin-top: 6px;
+    position: absolute;
 }
 
 
@@ -387,13 +393,19 @@ ol.content-content-list {
   left: 0;
 }
 
+.text-image {
+  width: 100%;
+  height: auto;
+  margin: 3em 0;
+}
+
 
 @media screen and (max-width: 1100px) {
   .hamburger {
     position: absolute;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 
   article {
     max-width: 100%;
@@ -412,6 +424,16 @@ ol.content-content-list {
   .buttons {
     padding-top: 5em;
     padding-bottom: 5em;
+  }
+  ol li {
+    list-style: disc;
+    margin-left: 2em;
+  }
+
+  .text-image {
+    width: 120%;
+    height: auto;
+    margin: 2em 0;
   }
 
 }
